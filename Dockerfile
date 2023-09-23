@@ -16,7 +16,8 @@ WORKDIR $HOME/app
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)
-COPY --chown=user package*.json $HOME/app
+COPY --chown=user package*.json $HOME/app/
+
 
 RUN npm install
 
